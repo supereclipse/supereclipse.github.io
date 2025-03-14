@@ -1,0 +1,929 @@
+/* styles.css */
+body {
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: white; /* Set background color to white */
+}
+
+img {
+    width: 100px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+svg {
+    fill: #000; /* Change fill color if embedded */
+}
+
+.container-1 {
+    width: 100%; /* Set to full width */
+    max-width: 1728px; /* Optional: limit max width */
+    height: 791px; /* Set height to 100% of the viewport height */
+    max-height: 791px; /* Set height to 100% of the viewport height */
+    display: flex; /* Use flexbox */
+    flex-direction: column;     /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    background-color: black; /* Ensure background is black */
+    z-index: 1;
+}
+
+.header-div {
+    margin-top: 63px;
+    width: 70%; /* Set to full width */
+    max-width: 1200px; /* Optional: limit max width */
+    height: 10vh; /* Set height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items */
+}
+
+.mini-logo {
+    width: 43px; /* Set to full width */
+    height: 41px; /* Set height to 100% of the viewport height */
+    position: relative; /* Positioning context for the bottom background */
+}
+
+.name-logo {
+    width: 120px; /* Set to full width */
+    height: 26px; /* Set height to 100% of the viewport height */
+    position: relative; /* Positioning context for the bottom background */
+}
+
+nav {
+    /* margin-left: 193px; */
+    /* margin-right: 231px; */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal layout */
+}
+
+nav li {
+    margin: 0 7px; /* Spacing between items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #FFFFFF; /* White color */
+    padding: 12px 40px; /* Spacing within links */
+    border-radius: 50px; /* Rounded corners */
+    border: 2px solid #FFF265; /* Yellow border */
+    transition: background-color 0.3s ease; /* Animation */
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-size: 13px; /* Change to your desired size */
+    font-weight: bold; /* or you can use a numerical value like 700 */
+}
+
+nav ul li:nth-child(2) a {
+    padding: 12px 60px;
+}
+
+nav a:hover {
+    background-color: #FFF265; /* Change color on hover */
+    color: #000; /* Change text color on hover */
+}
+
+.welcome-text {
+    margin-top: 112px; /* Adjust this value to add space from the top */
+    text-align: center; /* Centers the text horizontally */
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 68px; /* Change to your desired size */
+    font-weight: bold; /* Use bold weight for headings */
+    color: #FFFFFF; /* White color */
+    position: relative;
+}
+
+.description {
+    margin-top: 15px; /* Adjust this value to add space from the top */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items */
+}
+
+.arrow {
+    width: 108px; /* Adjust width */
+    height: 102px; /* Maintain aspect ratio */  
+}
+
+.description-text {
+    text-align: center; /* Centers the text horizontally */
+    font-family: 'Montserrat', sans-serif; /* Apply Comfortaa font */
+    font-size: 18px; /* Change to your desired size */
+    font-weight: 600; /* Use bold weight for headings */
+    color: #FFFFFF; /* White color */
+    position: relative;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.highlight-description {
+    color: #FFF265; /* Change the color of the highlighted text */
+    font-weight: bold; /* Optional: make the text bold */
+    font-style: italic;
+}
+
+.find-worker {
+    height: 139px;
+    min-height: 139px;
+    width: 571px;
+    margin-top: 17px; /* Adjust this value to add space from the top */
+    background-image: url('images/ГРАДИЕНТ.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-worker-button {
+    background-color: #FFEE34; /* Button background color */
+    color: black; /* Button text color */
+    border-radius: 50px; /* Makes the button oval */
+    padding: 17px 59px; /* Vertical and horizontal padding */
+    border: 2px solid #FFEE34; /* Yellow border */
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
+   
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.find-worker-button:hover {
+    background-color: #000; /* Change color on hover */
+    border: 2px solid #FFF265; /* Yellow border */
+    color: white; /* Change text color on hover */
+}
+
+.gradient-img {
+    height: 139px; /* Maintain aspect ratio */  
+    width: 571px; /* Adjust width */
+}
+
+.vacancies-div {
+    position: relative;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.vacancies {
+    width: 500px; /* Adjust width */
+    height: 186px; /* Maintain aspect ratio */  
+    z-index: 1; /* Ensure it’s above the vacancies image */
+}
+
+.logo-in-circle {
+    width: 56px; /* Adjust width */
+    height: 56px; /* Maintain aspect ratio */  
+    position: absolute; /* Position absolutely within the parent */
+    top: 57%; /* Center vertically */
+    left: 49%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to the center */
+    z-index: 1; /* Ensure it’s above the vacancies image */
+}
+
+/* .glow {
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
+} */
+
+.container-2 {
+    margin-top: -50px;
+    width: 100%; /* Set to full width */
+    max-width: 1728px; /* Optional: limit max width */
+    height: 400px; /* Set the height */
+    position: relative; /* Position relative to the container */
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    background-color: #FFF265; /* Set background color */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items */
+}
+
+.left-scobe {
+    width: 44px; /* Adjust width */
+    height: 107px; /* Maintain aspect ratio */  
+    margin-right: 20px;
+}
+
+.right-scobe {
+    width: 64px; /* Adjust width */
+    height: 107px; /* Maintain aspect ratio */  
+    margin-left: 20px;
+}
+
+.about-text {
+    text-align: center; /* Centers the text horizontally */
+    font-family: 'Montserrat', sans-serif; /* Apply Comfortaa font */
+    font-size: 16px; /* Change to your desired size */
+    font-weight: 600; /* Use bold weight for headings */
+    position: relative;
+}
+
+.highlight-about-text {
+    font-weight: 700; /* Use bold weight for headings */
+    font-style: italic;
+}
+
+.container-3 {
+    width: 100%; /* Set to full width */
+    max-width: 1728px; /* Optional: limit max width */
+    height: 883px; /* Set height to 100% of the viewport height */
+    position: relative; /* Positioning context */
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    /* No background color */
+}
+
+.for-employer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items */
+}
+
+.folder-image {
+    width: 301px; /* Adjust width */
+    height: 262px; /* Maintain aspect ratio */ 
+    margin-top: 186px; 
+    margin-left: 101px;
+}
+
+.employer-text-column {
+    position: relative;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.employer-text-head {
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 32px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0; /* 0% letter-spacing */
+    vertical-align: middle; /* Middle vertical alignment */
+    margin-bottom: 50px;
+    margin-top: 91px;
+}
+
+.employer-text-list {
+    position: relative;
+}
+
+.text-list-item {
+    position: relative; /* Add this line */
+    background-color: #FFEE34; /* Yellow background */
+    width: 370px; /* Adjust width */
+    height: 87px; /* Maintain aspect ratio */ 
+    color: black; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers vertically */
+    border-radius: 70px;
+    text-align: center;
+    font-size: 20px; /* Adjust text size as needed */
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-weight: 700;
+    z-index: 3;
+}
+
+.text-list-item:nth-child(2) {
+    position: relative; /* Add this line */
+    background-color: #FFF47C;
+    margin-top: -10px; /* Increased overlap */
+    z-index: 2;
+}
+
+.text-list-item:nth-child(3) {
+    position: relative; /* Add this line */
+    background-color: #FFF9B6;
+    margin-top: -20px; /* Increased overlap */
+    z-index: 1;
+}
+
+.for-worker {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Align items */
+}
+
+.cureer-image {
+    width: 317px; /* Adjust width */
+    height: 345px; /* Maintain aspect ratio */ 
+    margin-top: 40px; 
+    margin-right: 106px;
+    z-index: 1; /* Ensure it’s above other images */
+}
+
+.worker-text-head {
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 32px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0; /* 0% letter-spacing */
+    vertical-align: middle; /* Middle vertical alignment */
+    margin-bottom: 41px;
+    margin-top: 28px;
+}
+
+.container-4 {
+    width: 100%; /* Set to full width */
+    height: 594px; /* Set height */
+    border-radius: 55px; /* Set border radius */
+    background-color:  #FFF265; /* Optional: add a background color for visibility */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers vertically */
+    position: relative;
+}
+
+.circle-container {
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    animation: rotate 25s linear infinite; /* Adjust duration for speed */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Center image style */
+.center-image {
+    width: 224px; /* Adjust size as needed */
+    height: 219px; /* Adjust size as needed */
+    position: absolute; /* Ensure it's positioned in the center */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: 1; /* Ensure it appears above circle images */
+}
+
+.orbit {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px; 
+    height: 370px; 
+    border-radius: 50%; 
+    border: 3px solid black;
+}
+
+.circle-image {
+    position: absolute;
+    width: 125px; /* Adjust size of circle images */
+    height: 125px; /* Adjust size of circle images */
+}
+
+.container-5 {
+    width: 100%; /* Set to full width */
+    max-width: 1728px; /* Optional: limit max width */
+    height: 724px; /* Set height to 100% of the viewport height */
+    position: relative; /* Positioning context */
+    border-bottom-right-radius: 55px;
+    border-bottom-left-radius: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centers vertically */
+}
+
+.tiles-text-head {
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 32px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0; /* 0% letter-spacing */
+    margin-bottom: 80px;
+}
+
+.tiles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items to the top */
+
+}
+
+.tile-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.bigtile {
+    text-align: center;
+    padding-top: 80px; /* Set your desired top margin */
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('images/bigtile.svg');
+    width: 290px;
+    height: 337px;
+    border-radius: 25px;
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 21px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 2%; /* 0% letter-spacing */
+    color: black;
+    z-index: 2;
+}
+
+.tile {
+    border-radius: 25px;
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 16px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 5%; /* 0% letter-spacing */
+    color: #FFF265;
+    width: 281px;
+    height: 158px; 
+    margin-bottom: 23px;
+    z-index: 2;
+}
+
+.tile-2{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('images/tile2.svg');
+    color: black;
+}
+
+.tile-3{
+    background-color: #FFF265;
+    color: black;
+}
+
+.tile-4{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('images/tile.svg');
+}
+
+.line-stuff {
+    width: 2040px;
+    height: 1580px;
+    position: absolute; /* allow for custom positioning */
+    bottom: -820px; /* adjust to position it vertically */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* To center correctly */
+    z-index: 1; /* Send to the back if needed */
+}
+
+.container-6 {
+    width: 100%; /* Set to full width */
+    height: 3183px; /* Set height */
+    max-height: auto;
+    border-radius: 55px; /* Set border radius */
+    background-color:  #000; /* Optional: add a background color for visibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers vertically */
+    position: relative; /* Establish positioning context for absolute elements */
+}
+
+.steps-head-text {
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 32px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0%; /* 0% letter-spacing */
+    color: #FFFFFF;
+    margin-top: 128px;
+}
+
+.highlight-steps-head-text {
+    color: #FFF375;
+}
+
+.work_steps_img {
+    width: 660px;
+    height: 451px;
+    margin-top: 15px;
+}
+
+.steps-text-container {
+    margin-top: -80px;
+    width: 750px;
+    height: 451px;
+    position: relative;
+}
+
+.step-text-head {
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 20px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 10%; /* 0% letter-spacing */
+    color: #FFF265;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.step-text {
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-size: 14px; /* Change to your desired size */
+    font-weight: 600; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0%; /* 0% letter-spacing */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.box-1 {
+    position: absolute;
+    bottom: 340px;
+    left: 33px;
+}
+
+.box-2 {
+    position: absolute;
+    bottom: 230px;
+    left: 175px;
+}
+
+.box-3 {
+    position: absolute;
+    bottom: 340px;
+    left: 370px;
+}
+
+.box-4 {
+    position: absolute;
+    bottom: 230px;
+    left: 520px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF265;
+    border-radius: 30px;
+    width: 1050px;
+    height: 353px;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.form-header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-size: 25px; /* Change to your desired size */
+    font-weight: 800; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0%; /* 0% letter-spacing */
+    margin-top: 30px;
+}
+
+.form-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-1 {
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.line-2 {
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.line-3 {
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 443px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    color: #FFF265;
+    padding-left: 12px;
+}
+
+/* Placeholder styles */
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    color: #FFF265;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: darkgray;
+}
+
+.checkbox-div {
+    margin-left: 40px;
+}
+
+.form-link {
+    display: inline-block;
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    color: black;
+}
+
+.form-link-ref {
+    color: #FF0000;
+    text-decoration: none; /* Remove underline */
+}
+
+.custom-form-button {
+    background-color: black;
+    color: #FFF265;
+    width: 272px;
+    height: 50px;
+    border-radius: 14px; /* Makes the button oval */
+    cursor: pointer;
+    /* padding: 5px 24px;  */
+    border: 2px solid #FFF265; /* Yellow border */
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    margin-right: 42px;
+}
+
+.custom-form-button:hover {
+    color: white; 
+}
+
+.line-stuff-2 {
+    width: 1810px;
+    height: 1580px;
+    z-index: 1; /* Send to the back if needed */
+    position: absolute;
+    top: 915px;        
+    left: -160px;  
+}
+
+.mobile-img {
+    width: 251px;
+    height: 509px;
+    z-index: 2;
+    margin-top: 171px;
+}
+
+.review-div {
+    width: 1025px;
+    height: 200px;
+}
+
+.cards-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -115px;
+}
+
+.review-image {
+    width: 179px;
+    height: 200px;
+    z-index: 2;
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.review-image:hover {
+    transform: scale(1.3); /* Scale the image to 110% on hover */
+}
+
+.rev-1{
+    transform: rotate(-10deg);
+    margin-top: 90px;
+}
+
+.rev-2{
+    transform: rotate(-5deg);
+    margin-top: 30px;
+}
+
+.rev-3{
+    margin-top: 10px;
+}
+
+.rev-4{
+    transform: rotate(5deg);
+    margin-top: 30px;
+}
+
+.rev-5{
+    transform: rotate(10deg);
+    margin-top: 90px;
+}
+
+.faq-div {
+    width: 863px;
+    height: auto;
+    border-radius: 55px;
+    background-color: #FFF265;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    z-index: 3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.faq-head {
+    font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
+    font-size: 35px; /* Change to your desired size */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    line-height: 1; /* 100% line-height */
+    letter-spacing: 0%; /* 0% letter-spacing */
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-question {
+    width: 747px;
+    height: auto;
+    border-radius: 55px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-size: 14px;
+    line-height: 1.2; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    color: #FFF265;
+    margin-bottom: 20px;
+}
+
+.faq-question-header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding-left: 80px;
+    padding-right: 33px;
+}
+
+.faq-answer {
+    font-weight: 600;
+    display: block; /* Always display block to allow height transition */
+    overflow: hidden; /* Prevent overflow */
+    padding-left: 80px; /* Padding for content */
+    max-height: 0; /* Initial height */
+    transition: max-height 2s ease;
+    transition: padding 1s;
+}
+
+.faq-answer.show {
+    max-height: 200px; /* Set a maximum height for transition */
+    padding-top: 20px; /* Padding for content */
+    padding-bottom: 20px; /* Padding for content */
+}
+
+.faq-icon {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.icon-container {
+    padding: 5px; /* Add some padding for a larger clickable area */
+    cursor: pointer; /* Ensure the cursor indicates it's clickable */
+}
+
+.footer-div {
+    width: 100%;
+    height: 416px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    margin-top: 115px;
+}
+
+.foot-column {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.foot-column-header {
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700; /* or you can use a numerical value like 700 */
+    font-size: 18px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    color: #FFF265;
+}
+
+.fc2 p {
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
+}
+
+.fc3 a {
+    color: #FFFFFF; /* White color */
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
+}
+
+.custom-footer-button {
+    background-color: #FFF265;
+    color: #000;
+    width: 234px;
+    height: 44px;
+    border-radius: 12px; /* Makes the button oval */
+    cursor: pointer;
+    /* padding: 5px 24px;  */
+    border: 2px solid #FFF265; /* Yellow border */
+    font-family: 'Montserrat', sans-serif; /* Change to your desired font */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    margin-right: 42px;
+}
+
+.custom-footer-button:hover {
+    background-color: black;
+    color: white; 
+}
+
+.foot-rights {
+    display: block;
+    color: #FFF265;
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1; /* 100% line-height can be set to 1 */
+    letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
+    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
+    position: flex;
+    margin-bottom: 60px;
+}
