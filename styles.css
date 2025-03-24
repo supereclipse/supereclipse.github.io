@@ -134,7 +134,6 @@ nav a:hover {
     min-height: 139px;
     width: 571px;
     margin-top: 17px; /* Adjust this value to add space from the top */
-    background-image: url('images/ГРАДИЕНТ.svg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,20 +151,16 @@ nav a:hover {
     line-height: 1; /* 100% line-height can be set to 1 */
     letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
     vertical-align: middle; /* This is usually applied to inline or table-cell elements */
-   
+    box-shadow: 0 0 30px rgba(255, 242, 101, 0.8); /* Initial glow effect */
     cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .find-worker-button:hover {
     background-color: #000; /* Change color on hover */
     border: 2px solid #FFF265; /* Yellow border */
     color: white; /* Change text color on hover */
-}
-
-.gradient-img {
-    height: 139px; /* Maintain aspect ratio */  
-    width: 571px; /* Adjust width */
+    box-shadow: 0 0 30px rgba(255, 242, 101, 1); /* Stronger glow on hover */
 }
 
 .vacancies-div {
@@ -184,16 +179,25 @@ nav a:hover {
 .logo-in-circle {
     width: 56px; /* Adjust width */
     height: 56px; /* Maintain aspect ratio */  
-    position: absolute; /* Position absolutely within the parent */
-    top: 57%; /* Center vertically */
-    left: 49%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust positioning to the center */
+    position: relative; /* Position absolutely within the parent */
+    margin-top: -110px;
     z-index: 1; /* Ensure it’s above the vacancies image */
+    animation: rotate-1 20s linear infinite; /* Adjust duration for speed */
 }
 
-/* .glow {
-    box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;
-} */
+@keyframes rotate-1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.glow {
+    box-shadow: rgba(255, 242, 101, 0.8) 0 0 90px 33px; /* Updated glow color */
+    border-radius: 50%; /* Ensure the glow is also circular */
+}
 
 .container-2 {
     margin-top: -50px;
@@ -337,6 +341,7 @@ nav a:hover {
 
 .container-4 {
     width: 100%; /* Set to full width */
+    max-width: 1728px; /* Optional: limit max width */
     height: 594px; /* Set height */
     border-radius: 55px; /* Set border radius */
     background-color:  #FFF265; /* Optional: add a background color for visibility */
@@ -429,7 +434,6 @@ nav a:hover {
 .bigtile {
     text-align: center;
     padding-top: 80px; /* Set your desired top margin */
-
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url('images/bigtile.svg');
@@ -448,8 +452,9 @@ nav a:hover {
 .tile {
     border-radius: 25px;
     background-color: black;
-    text-align: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers vertically */
     font-family: 'Comfortaa', sans-serif; /* Apply Comfortaa font */
     font-size: 16px; /* Change to your desired size */
     font-weight: 700; /* or you can use a numerical value like 700 */
@@ -494,7 +499,8 @@ nav a:hover {
 
 .container-6 {
     width: 100%; /* Set to full width */
-    height: 3183px; /* Set height */
+    max-width: 1728px; /* Optional: limit max width */
+    height: auto; /* Set height */
     max-height: auto;
     border-radius: 55px; /* Set border radius */
     background-color:  #000; /* Optional: add a background color for visibility */
@@ -512,6 +518,8 @@ nav a:hover {
     letter-spacing: 0%; /* 0% letter-spacing */
     color: #FFFFFF;
     margin-top: 128px;
+    position: relative;
+    z-index: 3;
 }
 
 .highlight-steps-head-text {
@@ -521,14 +529,17 @@ nav a:hover {
 .work_steps_img {
     width: 660px;
     height: 451px;
+    position: relative;
+    z-index: 3;
     margin-top: 15px;
 }
 
 .steps-text-container {
-    margin-top: -80px;
     width: 750px;
-    height: 451px;
+    min-height: 451px;
     position: relative;
+    z-index: 3;
+    margin-top: -100px;
 }
 
 .step-text-head {
@@ -583,8 +594,9 @@ nav a:hover {
     border-radius: 30px;
     width: 1050px;
     height: 353px;
+    position: relative;
+    z-index: 3;
     margin-top: -100px;
-    z-index: 2;
 }
 
 .form-header {
@@ -636,6 +648,7 @@ textarea {
     height: 40px;
     border-radius: 14px;
     background-color: #000;
+    border: 0;
     font-family: 'Montserrat', sans-serif; /* Change to your desired font */
     font-weight: 700;
     font-size: 12px;
@@ -710,19 +723,24 @@ textarea:focus::placeholder {
     z-index: 1; /* Send to the back if needed */
     position: absolute;
     top: 915px;        
-    left: -160px;  
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* To center correctly */
 }
 
 .mobile-img {
     width: 251px;
     height: 509px;
-    z-index: 2;
+    z-index: 3;
+    position: relative;
     margin-top: 171px;
 }
 
 .review-div {
     width: 1025px;
     height: 200px;
+    position: relative;
+    margin-top: -10px;
+    z-index: 3;
 }
 
 .cards-div {
@@ -780,6 +798,7 @@ textarea:focus::placeholder {
     z-index: 3;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
 }
 
 .faq-head {
@@ -845,11 +864,12 @@ textarea:focus::placeholder {
 
 .footer-div {
     width: 100%;
-    height: 416px;
+    height: 216px;
     margin-top: auto;
     display: flex;
     justify-content: space-around;
     padding-top: 60px;
+    position: relative;
     margin-top: 115px;
 }
 
@@ -857,7 +877,7 @@ textarea:focus::placeholder {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 100px;
 }
 
 .foot-column-header {
@@ -923,7 +943,7 @@ textarea:focus::placeholder {
     font-size: 12px;
     line-height: 1; /* 100% line-height can be set to 1 */
     letter-spacing: 0; /* 0% letter-spacing can be set to 0 */
-    vertical-align: middle; /* This is usually applied to inline or table-cell elements */
-    position: flex;
+    position: relative;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
